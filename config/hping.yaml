@@ -1,0 +1,12 @@
+default:
+  interval: 1
+  type: GET,
+  timeout: 5000,
+  servers:
+    production: 
+      - http://www.ski.com
+      - http://services.ski.com
+
+    'dev servers': 
+      - http://www.ski.com
+      - http://services.ski.com
