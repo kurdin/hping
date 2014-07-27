@@ -1,6 +1,6 @@
 {
   "name": "hping",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTTP ping CLI with Node.js that sends HEAD or GET or POST requests to web or api servers and checks if they alive",
   "main": "bin/hping",
   "repository": {
