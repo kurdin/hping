@@ -12,15 +12,11 @@ The latest hPING version is installable via NPM:
 ```bash
 $ npm install hping -g
 ```
-
-If the above fails:
-
+If the above fails try this:
 ```bash
 $ npm install git://github.com/kurdin/hping#master -g
 ```
-
 or
-
 ```bash
 $ git clone https://github.com/kurdin/hping
 $ cd hping 
