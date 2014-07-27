@@ -3,33 +3,36 @@
 'use strict';
 
 var program = require('commander'),
-    util = require('util'),
-    log4js = require('log4js'),
-    dns = require('dns'),
-    path = require('path'),
-    color = require('cli-color'),
-    request = require('request'),
-    status_codes = require('../lib/status'),
-    config = require('yaml-config'),
-    helpers = require('../lib/helpers'),
-    info = 'hPING sends HEAD or GET or POST requests to web or api servers to check if they alive',
-    usage = '[head|get|post] [http(s)://]www.webserver.com[:port] [another host] [server group]',
-    confile = path.resolve(__dirname, '../config/hping.yaml'),
-    colors = {
-      r: 'red',
-      g: 'green',
-      bb: 'blackBright',
-      u: 'underline',
-      m: 'magenta',
-      y: 'yellow'
-    },
-    defaults = {
-      confile: confile,
-      interval: 1
-    };
+  util = require('util'),
+  fs = require('fs'),
+  log4js = require('log4js'),
+  dns = require('dns'),
+  path = require('path'),
+  color = require('cli-color'),
+  request = require('request'),
+  status_codes = require('../lib/status'),
+  config = require('yaml-config'),
+  helpers = require('../lib/helpers'),
+  info = 'hPING sends HEAD or GET or POST requests to web or api servers to check if they alive',
+  usage = '[head|get|post] [http(s)://]www.webserver.com[:port] [another host] [server group]',
+  hping_home_dir = getHPINGHome(),
+  defconfile = path.resolve(__dirname, '../config/hping.yaml'),
+  confile = path.resolve(hping_home_dir, 'hping.conf.yaml'),
+  colors = {
+    r: 'red',
+    g: 'green',
+    bb: 'blackBright',
+    u: 'underline',
+    m: 'magenta',
+    y: 'yellow'
+  },
+  defaults = {
+    confile: confile,
+    interval: 1
+  };
 
 var settings, stats = {},
-    logger_file;
+  logger_file;
 
 program
   .version('0.0.2')
@@ -41,14 +44,14 @@ program
   .command('servers')
   .description('Show server groups information from config file')
   .action(function() {
-    hping_run('servers');
+    hping('servers');
   });
 
 program
   .command('settings')
   .description('Show hPING settings from config file')
   .action(function() {
-    hping_run('settings');
+    hping('settings');
   });
 
 program
@@ -56,7 +59,7 @@ program
   .description('Sends HTTP GET requests to web or api server (set default in ' + confile + ')')
   .action(function() {
     if (program.args.length > 1) {
-      hping_run(program.args, 'GET');
+      hping(program.args, 'GET');
     } else {
       console.log(usage);
     }
@@ -67,7 +70,7 @@ program
   .description('Sends HTTP POST requests to web or api server (set default in ' + confile + ')')
   .action(function() {
     if (program.args.length > 1) {
-      hping_run(program.args, 'POST');
+      hping(program.args, 'POST');
     } else {
       console.log(usage);
     }
@@ -78,7 +81,7 @@ program
   .description('Sends HTTP HEAD requests to web or api server (set default in ' + confile + ')')
   .action(function() {
     if (program.args.length > 1) {
-      hping_run(program.args, 'HEAD');
+      hping(program.args, 'HEAD');
     } else {
       console.log(usage);
     }
@@ -86,13 +89,35 @@ program
 
 program
   .on('*', function(e) {
-    hping_run(e);
+    hping(e);
   });
 
 program.parse(process.argv);
 
 if (program.args.length < 1) {
   console.log('usage: hping ' + usage);
+}
+
+function hping(args, type) {
+  fs.exists(confile, function(exists) {
+    if (exists) {
+      hping_run(args, type);
+    } else {
+      fs.mkdir(path.resolve(hping_home_dir), function(e) {
+        if (!e || (e && e.code === 'EEXIST')) {
+          fs.mkdir(path.resolve(hping_home_dir + '/logs'), function(e) {
+            fs.createReadStream(defconfile).pipe(fs.createWriteStream(confile)).on('error', function(err) {
+              console.log(err);
+            }).on('close', function() {
+              hping_run(args, type);
+            });
+          });
+        } else {
+          console.log(e);
+        }
+      });
+    }
+  });
 }
 
 function hping_run(args, type) {
@@ -130,17 +155,17 @@ function prerequest(url, t) {
   if (!/^(https?):\/\//i.test(url)) url = 'http://' + url;
 
   var type = t || settings.type.toUpperCase(),
-      run_time = 0,
-      interval = ints(settings.interval),
-      max_run_time = ints(settings.max_run_time),
-      options = {
-        url: url,
-        timeout: ints(settings.timeout) || 5000,
-        method: type,
-        headers: {
-          'User-Agent': 'hPING [git.io/hping]'
-        }
-      };
+    run_time = 0,
+    interval = ints(settings.interval),
+    max_run_time = ints(settings.max_run_time),
+    options = {
+      url: url,
+      timeout: ints(settings.timeout) || 5000,
+      method: type,
+      headers: {
+        'User-Agent': 'hPING [git.io/hping]'
+      }
+    };
 
   dns.resolve4(require('url').parse(url).hostname, function(err, ip) {
     if (err) ip = [''];
@@ -165,14 +190,14 @@ function prerequest(url, t) {
 
 function predisplay(err, res, url_org, type, ip, ms) {
   var hcode, hlength, hserver, hinfo, hip, htime, code, status_color, empty,
-      sdo = settings.display_in_output,
-      status = '[UP]',
-      down = '[DOWN]',
-      hstatus = status,
-      htype = cc('type', type.toLowerCase()),
-      hurl = url_org,
-      line = [],
-      url_p = require('url').parse(url_org);
+    sdo = settings.display_in_output,
+    status = '[UP]',
+    down = '[DOWN]',
+    hstatus = status,
+    htype = cc('type', type.toLowerCase()),
+    hurl = url_org,
+    line = [],
+    url_p = require('url').parse(url_org);
 
   if (ip && hurl.indexOf(ip) == -1) hip = '(' + ip + ')';
   if (err && err.code) {
@@ -277,17 +302,17 @@ function displayStat(url) {
   if (stats[url].length === 0) return;
 
   var codes = [],
-      out = [],
-      total = {
-        requests: stats[url].length,
-        codes: {},
-        time: [],
-        up: 0,
-        down: 0
-      },
-      timesrange,
-      requests = '[' + ((total.requests > settings.show_stats_for_last) ? 'last ' : '') + total.requests + ' requests] ',
-      stat_line = '\n--- ' + url + ' hPING statistics ' + requests + '---\n';
+    out = [],
+    total = {
+      requests: stats[url].length,
+      codes: {},
+      time: [],
+      up: 0,
+      down: 0
+    },
+    timesrange,
+    requests = '[' + ((total.requests > settings.show_stats_for_last) ? 'last ' : '') + total.requests + ' requests] ',
+    stat_line = '\n--- ' + url + ' hPING statistics ' + requests + '---\n';
 
   stats[url].forEach(function(stat) {
 
@@ -353,4 +378,8 @@ function pline(l) {
     return l.join(' ').replace(/\n\s/g, '\n');
   }
   return '';
+}
+
+function getHPINGHome() {
+  return path.resolve(process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE, '.hping/');
 }

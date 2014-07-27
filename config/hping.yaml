@@ -8,7 +8,7 @@ default:
   max_run_time: 600 # (seconds) hPING maximum running time, set 0 to disable
 
   log_status_change: false # (true || false) if true, hPING will log status changes to log file
-  log_file: ./logs/hping.log # (path) to hPING log file
+  log_file: logs/hping.log # (path) to hPING log file, default path in users home .hping folder
   log_stats_on_exit: true # (true || false) if true, hPING will log statistics to file on exit
 
   display_in_output: # use true || fasle to turn on/off log output sections
