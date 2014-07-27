@@ -35,7 +35,7 @@ var settings, stats = {},
   logger_file;
 
 program
-  .version('0.0.2')
+  .version('0.0.4')
   .usage(usage)
   .option('-c, --config [' + confile + ']', 'hping config file in YAML format', defaults.confile)
   .option('-i, --interval [1]', 'hping interval in seconds (set default in ' + confile + ')', defaults.interval);

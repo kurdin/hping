@@ -1,0 +1,151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /root/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+12 verbose folder .
+13 info prepublish hping@0.0.3
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /root/.npm/1f1177db-tar.lock
+16 silly lockFile 20a4d8c4-7087-0-22797472751699388-tmp-tgz tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+17 verbose lock tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz /root/.npm/20a4d8c4-7087-0-22797472751699388-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 20a4d8c4-7087-0-22797472751699388-tmp-tgz tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+21 silly lockFile 20a4d8c4-7087-0-22797472751699388-tmp-tgz tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+22 verbose tar unpack /root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+23 silly lockFile 8467ad58-7087-0-22797472751699388-package tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+24 verbose lock tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package /root/.npm/8467ad58-7087-0-22797472751699388-package.lock
+25 silly lockFile 20a4d8c4-7087-0-22797472751699388-tmp-tgz tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+26 verbose lock tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz /root/.npm/20a4d8c4-7087-0-22797472751699388-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry bin/hping
+33 silly gunzTarPerm extractEntry config/hping.yaml
+34 silly gunzTarPerm extractEntry lib/helpers.js
+35 silly gunzTarPerm extractEntry lib/logger.js
+36 silly gunzTarPerm extractEntry lib/status.js
+37 silly gunzTarPerm extractEntry logs/.npmignore
+38 silly lockFile 8467ad58-7087-0-22797472751699388-package tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+39 silly lockFile 8467ad58-7087-0-22797472751699388-package tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+40 silly lockFile 20a4d8c4-7087-0-22797472751699388-tmp-tgz tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+41 silly lockFile 20a4d8c4-7087-0-22797472751699388-tmp-tgz tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/tmp.tgz
+42 verbose tar pack [ '/root/.npm/hping/0.0.3/package.tgz',
+42 verbose tar pack   '/root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package' ]
+43 verbose tarball /root/.npm/hping/0.0.3/package.tgz
+44 verbose folder /root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+45 silly lockFile 8467ad58-7087-0-22797472751699388-package tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+46 verbose lock tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package /root/.npm/8467ad58-7087-0-22797472751699388-package.lock
+47 silly lockFile b962b72e-root-npm-hping-0-0-3-package-tgz tar:///root/.npm/hping/0.0.3/package.tgz
+48 verbose lock tar:///root/.npm/hping/0.0.3/package.tgz /root/.npm/b962b72e-root-npm-hping-0-0-3-package-tgz.lock
+49 silly lockFile 8467ad58-7087-0-22797472751699388-package tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+50 silly lockFile 8467ad58-7087-0-22797472751699388-package tar:///root/tmp/npm-20006-XL_1T7UP/1406498297087-0.22797472751699388/package
+51 silly lockFile b962b72e-root-npm-hping-0-0-3-package-tgz tar:///root/.npm/hping/0.0.3/package.tgz
+52 silly lockFile b962b72e-root-npm-hping-0-0-3-package-tgz tar:///root/.npm/hping/0.0.3/package.tgz
+53 silly lockFile 25cd8d71-root-npm-hping-0-0-3-package /root/.npm/hping/0.0.3/package
+54 verbose lock /root/.npm/hping/0.0.3/package /root/.npm/25cd8d71-root-npm-hping-0-0-3-package.lock
+55 silly lockFile 25cd8d71-root-npm-hping-0-0-3-package /root/.npm/hping/0.0.3/package
+56 silly lockFile 25cd8d71-root-npm-hping-0-0-3-package /root/.npm/hping/0.0.3/package
+57 verbose tar unpack /root/.npm/hping/0.0.3/package.tgz
+58 silly lockFile 0bc5c235-tar-root-npm-hping-0-0-3-package tar:///root/.npm/hping/0.0.3/package
+59 verbose lock tar:///root/.npm/hping/0.0.3/package /root/.npm/0bc5c235-tar-root-npm-hping-0-0-3-package.lock
+60 silly lockFile b962b72e-root-npm-hping-0-0-3-package-tgz tar:///root/.npm/hping/0.0.3/package.tgz
+61 verbose lock tar:///root/.npm/hping/0.0.3/package.tgz /root/.npm/b962b72e-root-npm-hping-0-0-3-package-tgz.lock
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm extractEntry bin/hping
+68 silly gunzTarPerm extractEntry config/hping.yaml
+69 silly gunzTarPerm extractEntry lib/helpers.js
+70 silly gunzTarPerm extractEntry lib/logger.js
+71 silly gunzTarPerm extractEntry lib/status.js
+72 silly lockFile 0bc5c235-tar-root-npm-hping-0-0-3-package tar:///root/.npm/hping/0.0.3/package
+73 silly lockFile 0bc5c235-tar-root-npm-hping-0-0-3-package tar:///root/.npm/hping/0.0.3/package
+74 silly lockFile b962b72e-root-npm-hping-0-0-3-package-tgz tar:///root/.npm/hping/0.0.3/package.tgz
+75 silly lockFile b962b72e-root-npm-hping-0-0-3-package-tgz tar:///root/.npm/hping/0.0.3/package.tgz
+76 verbose chmod /root/.npm/hping/0.0.3/package.tgz 644
+77 verbose chown /root/.npm/hping/0.0.3/package.tgz [ 0, 0 ]
+78 silly lockFile 3a52ce78- .
+79 silly lockFile 3a52ce78- .
+80 silly publish { name: 'hping',
+80 silly publish   version: '0.0.3',
+80 silly publish   description: 'HTTP ping CLI with Node.js that sends HEAD or GET or POST requests to web or api servers and checks if they alive',
+80 silly publish   main: 'bin/hping',
+80 silly publish   repository: { type: 'git', url: 'https://github.com/kurdin/hping.git' },
+80 silly publish   keywords:
+80 silly publish    [ 'http ping',
+80 silly publish      'http get request ping',
+80 silly publish      'nodejs http ping',
+80 silly publish      'cli http ping',
+80 silly publish      'javascript http ping',
+80 silly publish      'hping',
+80 silly publish      'hping cli',
+80 silly publish      'ping http servers',
+80 silly publish      'ping servers over http' ],
+80 silly publish   bin: { hping: './bin/hping' },
+80 silly publish   author: { name: 'Sergey Kurdin', email: 'sergey@anothervision.com' },
+80 silly publish   license: 'MIT',
+80 silly publish   dependencies:
+80 silly publish    { commander: '~2.3.0',
+80 silly publish      request: '~2.37.0',
+80 silly publish      'yaml-config': '~0.3.0',
+80 silly publish      'cli-color': '~0.3.2',
+80 silly publish      log4js: '~0.6.16' },
+80 silly publish   readme: 'hPING\n=====\n\nNode.js CLI that sends HTTP HEAD or GET or POST requests to any web or api servers.\n\nhPING is the fastest and easiest way to check or quickly monitor if http servers are alive.\n\n## Installation\n\nThe latest hPING version is installable via NPM:\n\n```bash\n$ npm install hping -g\n```\nIf the above fails try this:\n```bash\n$ npm install git://github.com/kurdin/hping#master -g\n```\nor\n```bash\n$ git clone https://github.com/kurdin/hping\n$ cd hping \n$ npm install \n$ npm link \n```\n\n## Usage\n\n```bash\n$ hping www.google.com # hPING single server (www.google.com)\n```\n\n\n\n\n',
+80 silly publish   readmeFilename: 'README.md',
+80 silly publish   bugs: { url: 'https://github.com/kurdin/hping/issues' },
+80 silly publish   homepage: 'https://github.com/kurdin/hping',
+80 silly publish   _id: 'hping@0.0.3',
+80 silly publish   dist: { shasum: '4a8f772614fbcb23f72557edd6ccc2f6d4360d8f' },
+80 silly publish   _from: '.' }
+81 verbose url raw hping
+82 verbose url resolving [ 'https://registry.npmjs.org/', './hping' ]
+83 verbose url resolved https://registry.npmjs.org/hping
+84 info trying registry request attempt 1 at 17:58:17
+85 http PUT https://registry.npmjs.org/hping
+86 http 201 https://registry.npmjs.org/hping
+87 verbose url raw hping
+88 verbose url resolving [ 'https://registry.npmjs.org/', './hping' ]
+89 verbose url resolved https://registry.npmjs.org/hping
+90 info trying registry request attempt 1 at 17:58:17
+91 http GET https://registry.npmjs.org/hping
+92 http 200 https://registry.npmjs.org/hping
+93 error publish fail Cannot publish over existing version.
+93 error publish fail Update the 'version' field in package.json and try again.
+93 error publish fail
+93 error publish fail If the previous version was published in error, see:
+93 error publish fail     npm help unpublish
+93 error publish fail
+93 error publish fail To automatically increment version numbers, see:
+93 error publish fail     npm help version
+94 error System Linux 2.6.32-431.11.2.el6.x86_64
+95 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+96 error cwd /home/apps/hping-cli
+97 error node -v v0.10.22
+98 error npm -v 1.3.14
+99 error code EPUBLISHCONFLICT
+100 verbose exit [ 1, true ]
