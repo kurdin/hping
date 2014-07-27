@@ -6,6 +6,7 @@ var program = require('commander'),
     util = require('util'),
     log4js = require('log4js'),
     dns = require('dns'),
+    path = require('path'),
     color = require('cli-color'),
     request = require('request'),
     status_codes = require('../lib/status'),
@@ -13,6 +14,7 @@ var program = require('commander'),
     helpers = require('../lib/helpers'),
     info = 'hPING sends HEAD or GET or POST requests to web or api servers to check if they alive',
     usage = '[head|get|post] [http(s)://]www.webserver.com[:port] [another host] [server group]',
+    confile = path.resolve(__dirname, '../config/hping.yaml'),
     colors = {
       r: 'red',
       g: 'green',
@@ -22,7 +24,7 @@ var program = require('commander'),
       y: 'yellow'
     },
     defaults = {
-      confile: './config/hping.yaml',
+      confile: confile,
       interval: 1
     };
 
@@ -30,10 +32,10 @@ var settings, stats = {},
     logger_file;
 
 program
-  .version('0.1')
+  .version('0.0.2')
   .usage(usage)
-  .option('-c, --config [./config/hping.yaml]', 'hping config file in YAML format', defaults.confile)
-  .option('-i, --interval [1]', 'hping interval in seconds (set default in ./config/hping.yaml)', defaults.interval);
+  .option('-c, --config [' + confile + ']', 'hping config file in YAML format', defaults.confile)
+  .option('-i, --interval [1]', 'hping interval in seconds (set default in ' + confile + ')', defaults.interval);
 
 program
   .command('servers')
@@ -51,7 +53,7 @@ program
 
 program
   .command('get')
-  .description('Sends HTTP GET requests to web or api server (set default in ./config/hping.yaml)')
+  .description('Sends HTTP GET requests to web or api server (set default in ' + confile + ')')
   .action(function() {
     if (program.args.length > 1) {
       hping_run(program.args, 'GET');
@@ -62,7 +64,7 @@ program
 
 program
   .command('post')
-  .description('Sends HTTP POST requests to web or api server (set default in ./config/hping.yaml)')
+  .description('Sends HTTP POST requests to web or api server (set default in ' + confile + ')')
   .action(function() {
     if (program.args.length > 1) {
       hping_run(program.args, 'POST');
@@ -73,7 +75,7 @@ program
 
 program
   .command('head')
-  .description('Sends HTTP HEAD requests to web or api server (set default in ./config/hping.yaml)')
+  .description('Sends HTTP HEAD requests to web or api server (set default in ' + confile + ')')
   .action(function() {
     if (program.args.length > 1) {
       hping_run(program.args, 'HEAD');
