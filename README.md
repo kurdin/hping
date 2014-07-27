@@ -3,7 +3,7 @@ hPING
 
 Node.js CLI that sends HTTP HEAD or GET or POST requests to any web or api servers.
 
-hPING is the fastest and easiest way to check or monitor if http servers are alive.
+hPING is the fastest and easiest way to check or quickly monitor if http servers are alive.
 
 ## Installation
 
