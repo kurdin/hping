@@ -1,0 +1,391 @@
+[2014-07-19 12:30:57.144] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m742[24mms
+[2014-07-19 12:30:57.953] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m549[24mms
+[2014-07-19 12:30:58.956] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m550[24mms
+[2014-07-19 12:30:59.974] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m566[24mms
+[2014-07-19 12:31:00.957] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m549[24mms
+[2014-07-19 12:31:01.960] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m552[24mms
+[2014-07-19 12:31:02.964] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m554[24mms
+[2014-07-19 12:31:03.976] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m565[24mms
+[2014-07-19 12:31:04.959] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m549[24mms
+[2014-07-19 12:31:05.969] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[2014-07-19 12:31:06.959] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m547[24mms
+[2014-07-19 12:31:07.965] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[2014-07-19 12:31:08.273] [INFO] hping - 
+--- http://www.lenta.ru hPING statistics [12 requests] ---
+[2014-07-19 12:31:26.825] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m856[24mms
+[2014-07-19 12:31:27.516] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m545[24mms
+[2014-07-19 12:31:28.529] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[2014-07-19 12:31:29.525] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[2014-07-19 12:31:30.523] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m547[24mms
+[2014-07-19 12:31:31.532] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[2014-07-19 12:31:31.785] [INFO] hping - 
+--- http://www.lenta.ru hPING statistics [6 requests] ---
+[2014-07-19 12:31:36.710] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m570[24mms
+[2014-07-19 12:31:37.684] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m544[24mms
+[2014-07-19 12:31:38.682] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m540[24mms
+[2014-07-19 12:31:39.665] [INFO] hping - 
+--- http://www.lenta.ru hPING statistics [3 requests] ---
+[2014-07-19 12:35:24.110] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m570[24mms
+[2014-07-19 12:35:25.098] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[2014-07-19 12:35:26.093] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m550[24mms
+[2014-07-19 12:35:27.095] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[2014-07-19 12:35:28.103] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m557[24mms
+[2014-07-19 12:35:28.550] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:29.098] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m552[24mms
+[2014-07-19 12:35:29.550] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:30.104] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m557[24mms
+[2014-07-19 12:35:30.551] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[2014-07-19 12:35:31.098] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m549[24mms
+[2014-07-19 12:35:31.554] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:32.111] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m561[24mms
+[2014-07-19 12:35:32.553] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[2014-07-19 12:35:33.101] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m550[24mms
+[2014-07-19 12:35:33.556] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:33.585] [INFO] hping - 
+--- http://www.lenta.ru hPING statistics [10 requests] ---
+[2014-07-19 12:35:34.935] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m566[24mms
+[2014-07-19 12:35:35.921] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[2014-07-19 12:35:36.934] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m561[24mms
+[2014-07-19 12:35:37.924] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[2014-07-19 12:35:39.201] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m827[24mms
+[2014-07-19 12:35:39.379] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:39.925] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m550[24mms
+[2014-07-19 12:35:40.379] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:40.933] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m557[24mms
+[2014-07-19 12:35:41.379] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[2014-07-19 12:35:41.933] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m554[24mms
+[2014-07-19 12:35:42.383] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[2014-07-19 12:35:42.938] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m559[24mms
+[2014-07-19 12:35:43.382] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[2014-07-19 12:35:43.934] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m553[24mms
+[2014-07-19 12:35:44.383] [INFO] hping - hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[2014-07-19 12:35:44.889] [INFO] hping - 
+--- http://www.lenta.ru hPING statistics [10 requests] ---
+[2014-07-19 12:38:55.266] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m755[24mms
+[2014-07-19 12:38:56.070] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m557[24mms
+[2014-07-19 12:38:57.064] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m550[24mms
+[2014-07-19 12:38:58.075] [INFO] hping - hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.8)[39m code=200 info=ok server=nginx time=[4m560[24mms
+[2014-07-19 12:38:58.889] [INFO] hping - 
+--- http://www.lenta.ru hPING statistics [4 requests] ---
+[17:49:30] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m574[24mms
+
+[17:49:30] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m574[24mms
+
+[17:49:31] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m716[24mms
+
+[17:49:31] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m716[24mms
+
+[17:49:32] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m553[24mms
+
+[17:49:32] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m553[24mms
+
+[17:49:33] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m551[24mms
+
+[17:49:33] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m551[24mms
+
+[17:49:34] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m548[24mms
+
+[17:49:34] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m548[24mms
+
+[17:49:35] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+
+[17:49:35] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+
+[17:49:35] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m550[24mms
+
+[17:49:35] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m550[24mms
+
+[17:49:36] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+
+[17:49:36] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+
+[17:49:36] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m554[24mms
+
+[17:49:36] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m554[24mms
+
+[17:49:37] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+
+[17:49:37] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+
+[17:49:37] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m551[24mms
+
+[17:49:37] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m551[24mms
+
+[17:49:38] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+
+[17:49:38] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+
+[17:49:38] 
+--- http://192.4.5.4 hPING statistics [4 requests] ---
+
+[17:49:39] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m567[24mms
+[17:49:39] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m567[24mms
+[17:49:40] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m548[24mms
+[17:49:40] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m548[24mms
+[17:49:41] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m548[24mms
+[17:49:41] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m548[24mms
+[17:49:42] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m711[24mms
+[17:49:42] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.9)[39m code=200 info=ok server=nginx time=[4m711[24mms
+[17:49:43] 
+--- http://www.lenta.ru hPING statistics [4 requests] ---
+[17:49:55] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m569[24mms
+[17:49:55] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m569[24mms
+[17:49:56] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[17:49:56] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[17:49:57] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m554[24mms
+[17:49:57] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m554[24mms
+[17:49:58] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[17:49:58] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[17:49:59] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m557[24mms
+[17:49:59] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m557[24mms
+[17:49:59] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:49:59] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m569[24mms
+[17:50:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m569[24mms
+[17:50:00] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:00] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:01] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m563[24mms
+[17:50:01] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m563[24mms
+[17:50:01] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:01] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:02] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[17:50:02] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[17:50:02] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:02] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:03] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m712[24mms
+[17:50:03] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m712[24mms
+[17:50:03] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:03] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:04] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[17:50:04] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+[17:50:04] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:04] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:05] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[17:50:05] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[17:50:05] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:05] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+[17:50:06] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[17:50:06] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+[17:50:06] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:06] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:07] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[17:50:07] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+[17:50:07] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:07] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+[17:50:08] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m554[24mms
+[17:50:08] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m554[24mms
+[17:50:08] 
+--- http://www.lenta.ru hPING statistics [14 requests] ---
+2014-07-19 17:50:59.999[17:50:59] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m817[24mms
+2014-07-19 17:51:00.001[17:51:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m817[24mms
+2014-07-19 17:51:00.742[17:51:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:51:00.742[17:51:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:51:01.726[17:51:01] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m540[24mms
+2014-07-19 17:51:01.726[17:51:01] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m540[24mms
+2014-07-19 17:51:02.743[17:51:02] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:51:02.744[17:51:02] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:51:03.739[17:51:03] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:51:03.739[17:51:03] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:51:04.192[17:51:04] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:51:04.192[17:51:04] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:51:04.732[17:51:04] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m546[24mms
+2014-07-19 17:51:04.732[17:51:04] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m546[24mms
+2014-07-19 17:51:05.192[17:51:05] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:51:05.193[17:51:05] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:51:05.737[17:51:05] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:51:05.738[17:51:05] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:51:06.191[17:51:06] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:51:06.192[17:51:06] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:51:06.742[17:51:06] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:51:06.743[17:51:06] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:51:06.771[17:51:06] 
+--- http://www.lenta.ru hPING statistics [8 requests] ---
+2014-07-19 17:51:37.015[17:51:37] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m773[24mms
+2014-07-19 17:51:37.017[17:51:37] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m773[24mms
+2014-07-19 17:51:37.803[17:51:37] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m561[24mms
+2014-07-19 17:51:37.803[17:51:37] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m561[24mms
+2014-07-19 17:51:38.792[17:51:38] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m548[24mms
+2014-07-19 17:51:38.793[17:51:38] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m548[24mms
+2014-07-19 17:51:39.815[17:51:39] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m570[24mms
+2014-07-19 17:51:39.816[17:51:39] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m570[24mms
+2014-07-19 17:51:40.421[17:51:40] [1m[32mUP=100%[39m[22m [32m200=100%[39m time(min=548 avg=613 max=773)ms
+2014-07-19 17:52:24.665[17:52:24] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m719[24mms
+2014-07-19 17:52:24.666[17:52:24] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m719[24mms
+2014-07-19 17:52:25.506[17:52:25] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:52:25.506[17:52:25] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:52:26.505[17:52:26] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:52:26.505[17:52:26] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:52:27.513[17:52:27] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:52:27.514[17:52:27] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:52:28.505[17:52:28] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:52:28.505[17:52:28] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:52:28.957[17:52:28] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:28.958[17:52:28] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:29.513[17:52:29] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:52:29.513[17:52:29] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:52:29.956[17:52:29] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:52:29.956[17:52:29] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:52:30.505[17:52:30] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:52:30.505[17:52:30] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:52:30.958[17:52:30] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:30.958[17:52:30] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:31.512[17:52:31] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m557[24mms
+2014-07-19 17:52:31.512[17:52:31] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m557[24mms
+2014-07-19 17:52:31.958[17:52:31] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:52:31.958[17:52:31] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:52:32.508[17:52:32] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:52:32.509[17:52:32] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:52:32.960[17:52:32] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:52:32.960[17:52:32] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:52:33.518[17:52:33] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:52:33.518[17:52:33] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:52:33.960[17:52:33] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:33.961[17:52:33] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:34.512[17:52:34] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:52:34.513[17:52:34] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:52:34.959[17:52:34] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:34.960[17:52:34] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:52:35.180[17:52:35] [1m[32mUP=100%[39m[22m [32m200=100%[39m time(min=551 avg=571 max=719)ms
+2014-07-19 17:53:29.956[17:53:29] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m765[24mms
+2014-07-19 17:53:29.958[17:53:29] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m765[24mms
+2014-07-19 17:53:30.750[17:53:30] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:53:30.750[17:53:30] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:53:31.747[17:53:31] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m552[24mms
+2014-07-19 17:53:31.747[17:53:31] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m552[24mms
+2014-07-19 17:53:32.752[17:53:32] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:53:32.753[17:53:32] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:53:33.242[17:53:33] 
+--- http://www.lenta.ru hPING statistics [4 requests] ---
+2014-07-19 17:53:38.051[17:53:38] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m570[24mms
+2014-07-19 17:53:38.053[17:53:38] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m570[24mms
+2014-07-19 17:53:39.029[17:53:39] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m546[24mms
+2014-07-19 17:53:39.029[17:53:39] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m546[24mms
+2014-07-19 17:53:40.032[17:53:40] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m548[24mms
+2014-07-19 17:53:40.032[17:53:40] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m548[24mms
+2014-07-19 17:53:41.035[17:53:41] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:53:41.036[17:53:41] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:53:41.603[17:53:41] 
+--- http://www.lenta.ru hPING statistics [4 requests] ---
+2014-07-19 17:54:07.372[17:54:07] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m715[24mms
+2014-07-19 17:54:07.374[17:54:07] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m715[24mms
+2014-07-19 17:54:08.223[17:54:08] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m563[24mms
+2014-07-19 17:54:08.223[17:54:08] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m563[24mms
+2014-07-19 17:54:08.715[17:54:08] 
+--- http://www.lenta.ru hPING statistics [2 requests] ---
+2014-07-19 17:54:11.433[17:54:11] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m579[24mms
+2014-07-19 17:54:11.435[17:54:11] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m579[24mms
+2014-07-19 17:54:12.415[17:54:12] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:54:12.416[17:54:12] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:54:12.603[17:54:12] 
+--- http://www.lenta.ru hPING statistics [2 requests] ---
+2014-07-19 17:54:17.179[17:54:17] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m565[24mms
+2014-07-19 17:54:17.181[17:54:17] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m565[24mms
+2014-07-19 17:54:18.159[17:54:18] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m542[24mms
+2014-07-19 17:54:18.159[17:54:18] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m542[24mms
+2014-07-19 17:54:19.173[17:54:19] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m555[24mms
+2014-07-19 17:54:19.173[17:54:19] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m555[24mms
+2014-07-19 17:54:20.035[17:54:20] 
+--- http://www.lenta.ru hPING statistics [3 requests] ---
+2014-07-19 17:54:41.723[17:54:41] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m747[24mms
+2014-07-19 17:54:42.531[17:54:42] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:54:43.535[17:54:43] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:54:44.315[17:54:44] 
+--- http://www.lenta.ru hPING statistics [3 requests] ---
+2014-07-19 17:54:47.484[17:54:47] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:54:48.471[17:54:48] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m543[24mms
+2014-07-19 17:54:49.474[17:54:49] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m545[24mms
+2014-07-19 17:54:50.496[17:54:50] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m566[24mms
+2014-07-19 17:54:50.683[17:54:50] 
+--- http://www.lenta.ru hPING statistics [4 requests] ---
+2014-07-19 17:54:52.603[17:54:52] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m573[24mms
+2014-07-19 17:54:53.588[17:54:53] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m555[24mms
+2014-07-19 17:54:54.587[17:54:54] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m552[24mms
+2014-07-19 17:54:55.592[17:54:55] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m555[24mms
+2014-07-19 17:54:56.588[17:54:56] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m550[24mms
+2014-07-19 17:54:57.042[17:54:57] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:54:57.592[17:54:57] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:54:58.041[17:54:58] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:54:58.594[17:54:58] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m555[24mms
+2014-07-19 17:54:59.043[17:54:59] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:54:59.588[17:54:59] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m549[24mms
+2014-07-19 17:55:00.044[17:55:00] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:55:00.599[17:55:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:55:01.044[17:55:01] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:01.599[17:55:01] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:55:02.046[17:55:02] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:02.593[17:55:02] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m549[24mms
+2014-07-19 17:55:03.047[17:55:03] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:03.594[17:55:03] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m550[24mms
+2014-07-19 17:55:04.049[17:55:04] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:55:04.609[17:55:04] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m563[24mms
+2014-07-19 17:55:04.703[17:55:04] 
+--- http://www.lenta.ru hPING statistics [13 requests] ---
+2014-07-19 17:55:45.200[17:55:45] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m570[24mms
+2014-07-19 17:55:46.171[17:55:46] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m539[24mms
+2014-07-19 17:55:47.181[17:55:47] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m549[24mms
+2014-07-19 17:55:48.202[17:55:48] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m570[24mms
+2014-07-19 17:55:49.179[17:55:49] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m545[24mms
+2014-07-19 17:55:49.640[17:55:49] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:50.184[17:55:50] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m548[24mms
+2014-07-19 17:55:50.640[17:55:50] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:51.191[17:55:51] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m553[24mms
+2014-07-19 17:55:51.640[17:55:51] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:52.190[17:55:52] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:55:52.641[17:55:52] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:53.194[17:55:53] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:55:53.642[17:55:53] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:54.203[17:55:54] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m560[24mms
+2014-07-19 17:55:54.643[17:55:54] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:55.508[17:55:55] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m864[24mms
+2014-07-19 17:55:55.643[17:55:55] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:55:56.206[17:55:56] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m561[24mms
+2014-07-19 17:55:56.642[17:55:56] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:57.202[17:55:57] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m557[24mms
+2014-07-19 17:55:57.645[17:55:57] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:55:58.206[17:55:58] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m561[24mms
+2014-07-19 17:55:58.645[17:55:58] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:55:59.202[17:55:59] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m556[24mms
+2014-07-19 17:55:59.645[17:55:59] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:00.201[17:56:00] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m554[24mms
+2014-07-19 17:56:00.645[17:56:00] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:01.199[17:56:01] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:56:01.648[17:56:01] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:02.198[17:56:02] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m549[24mms
+2014-07-19 17:56:02.647[17:56:02] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:03.213[17:56:03] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m565[24mms
+2014-07-19 17:56:03.647[17:56:03] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:56:04.240[17:56:04] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m590[24mms
+2014-07-19 17:56:04.648[17:56:04] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:05.205[17:56:05] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m555[24mms
+2014-07-19 17:56:05.650[17:56:05] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:06.230[17:56:06] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m579[24mms
+2014-07-19 17:56:06.650[17:56:06] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:56:07.214[17:56:07] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:56:07.651[17:56:07] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:08.214[17:56:08] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:56:08.652[17:56:08] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:09.203[17:56:09] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m551[24mms
+2014-07-19 17:56:09.652[17:56:09] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:56:10.200[17:56:10] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m547[24mms
+2014-07-19 17:56:10.653[17:56:10] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:11.212[17:56:11] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m557[24mms
+2014-07-19 17:56:11.654[17:56:11] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:12.207[17:56:12] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m552[24mms
+2014-07-19 17:56:12.654[17:56:12] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:56:13.208[17:56:13] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m552[24mms
+2014-07-19 17:56:13.654[17:56:13] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:14.209[17:56:14] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m552[24mms
+2014-07-19 17:56:14.411[17:56:14] 
+--- http://www.lenta.ru hPING statistics [30 requests] ---
+2014-07-19 17:56:49.447[17:56:49] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m575[24mms
+2014-07-19 17:56:50.432[17:56:50] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m560[24mms
+2014-07-19 17:56:51.425[17:56:51] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m549[24mms
+2014-07-19 17:56:52.439[17:56:52] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m562[24mms
+2014-07-19 17:56:53.436[17:56:53] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m559[24mms
+2014-07-19 17:56:53.882[17:56:53] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:54.425[17:56:54] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m548[24mms
+2014-07-19 17:56:54.882[17:56:54] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31mesockettimedout[39m 
+2014-07-19 17:56:55.437[17:56:55] hPING: [1m[32m[UP][39m[22m http://[1m[32mwww.lenta.ru[39m[22m [90m(81.19.76.10)[39m code=200 info=ok server=nginx time=[4m558[24mms
+2014-07-19 17:56:55.883[17:56:55] hPING: [1m[31m[DOWN][39m[22m http://[1m[31m192.4.5.4[39m[22m [90m[39m error=[31metimedout[39m info=[31mconnection_timeout[39m 
+2014-07-19 17:56:56.019[17:56:56] 
+--- http://www.lenta.ru hPING statistics [7 requests] ---

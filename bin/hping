@@ -1,144 +1,354 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var program = require('commander'),
-dns = require('dns'),
-request = require('request'),
-status_codes = require('../lib/status')
-config = require('yaml-config'),
-info = 'Sends HTTP HEAD or GET or POST requests to any web or api server.\n',
-usage = '[head|get|post] [http(s)://]www.webserver.com[:port] [another host]';
+    util = require('util'),
+    log4js = require('log4js'),
+    dns = require('dns'),
+    color = require('cli-color'),
+    request = require('request'),
+    status_codes = require('../lib/status'),
+    config = require('yaml-config'),
+    helpers = require('../lib/helpers'),
+    info = 'hPING sends HEAD or GET or POST requests to web or api servers to check if they alive',
+    usage = '[head|get|post] [http(s)://]www.webserver.com[:port] [another host] [server group]',
+    colors = {
+      r: 'red',
+      g: 'green',
+      bb: 'blackBright',
+      u: 'underline',
+      m: 'magenta',
+      y: 'yellow'
+    },
+    defaults = {
+      confile: './config/hping.yaml',
+      interval: 1
+    };
 
-// hping http://www.console.re [or] hping https://www.console.re [or] hping http://www.console.re:443 [or] hping http://www.console.re/ping';
-
-var defaults = {
-  confile: './config/hping.yaml',
-  interval: 1,
-  type: 'HEAD'
-}, settings;
+var settings, stats = {},
+    logger_file;
 
 program
   .version('0.1')
   .usage(usage)
   .option('-c, --config [./config/hping.yaml]', 'hping config file in YAML format', defaults.confile)
-  .option('-i, --interval [1]', 'hping interval in seconds (edit defaults in ./config/default.yml)', defaults.interval)
-  .option('-t, --type [head]', 'hping request type [head] | get | post (edit defaults in ./config/default.yml)', defaults.type)
+  .option('-i, --interval [1]', 'hping interval in seconds (set default in ./config/hping.yaml)', defaults.interval);
 
 program
-  .command('help')
-  .description('Show usage information')
-  .action(function(msg, options){
-    console.log(info);
+  .command('servers')
+  .description('Show server groups information from config file')
+  .action(function() {
+    hping_run('servers');
+  });
+
+program
+  .command('settings')
+  .description('Show hPING settings from config file')
+  .action(function() {
+    hping_run('settings');
   });
 
 program
   .command('get')
-  .description('Sends HTTP GET requests to web or api server.')
-  .action(function(msg, options){
+  .description('Sends HTTP GET requests to web or api server (set default in ./config/hping.yaml)')
+  .action(function() {
     if (program.args.length > 1) {
       hping_run(program.args, 'GET');
     } else {
       console.log(usage);
     }
-});
+  });
 
 program
   .command('post')
-  .description('Sends HTTP POST requests to web or api server.')
-  .action(function(msg, options){
+  .description('Sends HTTP POST requests to web or api server (set default in ./config/hping.yaml)')
+  .action(function() {
     if (program.args.length > 1) {
       hping_run(program.args, 'POST');
     } else {
       console.log(usage);
     }
-});
+  });
 
 program
   .command('head')
-  .description('Sends HTTP HEAD requests to web or api server.')
-  .action(function(msg, options){
+  .description('Sends HTTP HEAD requests to web or api server (set default in ./config/hping.yaml)')
+  .action(function() {
     if (program.args.length > 1) {
       hping_run(program.args, 'HEAD');
     } else {
       console.log(usage);
     }
-});
+  });
 
 program
-   .on('*', function(e) {
-      hping_run(e); 
-});
+  .on('*', function(e) {
+    hping_run(e);
+  });
 
 program.parse(process.argv);
 
-if(program.args.length < 1) { 
-  console.log(usage);
-};
+if (program.args.length < 1) {
+  console.log('usage: hping ' + usage);
+}
 
 function hping_run(args, type) {
-   var c = (program.config !== defaults.confile)? program.config : defaults.confile;
-   settings = config.readConfig(c);
-   if (!settings.interval) { 
-    console.error('Specified config file: %s could not be used, see error above. Using default config: %s', c, defaults.confile);
+  var cnf = (program.config !== defaults.confile) ? program.config : defaults.confile;
+  settings = config.readConfig(cnf);
+  if (!settings.interval) {
+    console.error('Specified config file: %s could not be used, see error above. Using default config: %s', cnf, defaults.confile);
     settings = config.readConfig(defaults.confile);
-   }
-   settings.interval = program.interval;
-   settings.type = program.type;
-   args.forEach(function (url) {
-     if (typeof url == 'string' || url instanceof String) {
-      hpinging(url,type);
-     }
-   });
+    cnf = defaults.confile;
+  }
+  if (settings.log_status_change) logger_file = require('../lib/logger')(settings.log_file);
+  settings.interval = (program.interval === 1) ? settings.interval : program.interval;
+  if (args == 'servers') {
+    showServers();
+    return;
+  }
+  if (args == 'settings') {
+    showSettings(cnf);
+    return;
+  }
+  args.forEach(function(url) {
+    if (typeof url == 'string' || url instanceof String) {
+      if (settings.servers && settings.servers[url]) {
+        settings.servers[url].forEach(function(url) {
+          prerequest(url, type);
+        });
+      } else {
+        prerequest(url, type);
+      }
+    }
+  });
 }
 
-function hpinging(url, type) {
-     if(!/^(https?):\/\//i.test(url)) url = 'http://'+url;
-     if (!type) type = settings.type || 'HEAD';
-     var options = {
+function prerequest(url, t) {
+  if (!/^(https?):\/\//i.test(url)) url = 'http://' + url;
+
+  var type = t || settings.type.toUpperCase(),
+      run_time = 0,
+      interval = ints(settings.interval),
+      max_run_time = ints(settings.max_run_time),
+      options = {
         url: url,
-        timeout: parseInt(settings.timeout, 10) || 5000,
-        method : type,
+        timeout: ints(settings.timeout) || 5000,
+        method: type,
         headers: {
-        'User-Agent': 'hPING [git.io/hping]'
+          'User-Agent': 'hPING [git.io/hping]'
         }
-     };
-     dns.resolve4(require('url').parse(url).hostname, function (err, ip) {
-       if (err) var ip = [''];
-       request(options, function (e,r) {
-          hping_display(e,r,url,type, ip[0]);
-       });
-     });
+      };
+
+  dns.resolve4(require('url').parse(url).hostname, function(err, ip) {
+    if (err) ip = [''];
+    stats[url] = [];
+    (function dorequest() {
+      var start = new Date();
+      request(options, function(e, r) {
+        var res_time = new Date() - start;
+        var line = predisplay(e, r, url, type, ip[0], res_time);
+        display(line);
+      });
+      if (max_run_time === 0 || max_run_time > (interval * run_time)) {
+        setTimeout(dorequest, interval * 1000);
+        run_time++;
+      } else {
+        console.log('hPING: Maximum running time has been reached (set in config), exiting.');
+        gracefulExit();
+      }
+    })();
+  });
 }
 
-function hping_display(err,res,url,type,ip) {
-  var hcode = hlength = hserver = herror = hinfo = hip = '';
-  var hstatus = up = '[UP]';
-  var down = '[DOWN]';
-  var hping = 'hPING: (' + type + ') '  + url;
+function predisplay(err, res, url_org, type, ip, ms) {
+  var hcode, hlength, hserver, hinfo, hip, htime, code, status_color, empty,
+      sdo = settings.display_in_output,
+      status = '[UP]',
+      down = '[DOWN]',
+      hstatus = status,
+      htype = cc('type', type.toLowerCase()),
+      hurl = url_org,
+      line = [],
+      url_p = require('url').parse(url_org);
 
-  if (ip && url.indexOf(ip) == -1) hip = ' (' + ip + ')';
+  if (ip && hurl.indexOf(ip) == -1) hip = '(' + ip + ')';
   if (err && err.code) {
-    hstatus = down;
-    hcode = ' error=' + err.code.toLowerCase();
-    switch(err.code) {
-    case 'ETIMEDOUT':
-        hinfo = " info=connection_timeout";
+    code = 'error';
+    status_color = colors.r;
+    status = down;
+    hcode = cc('error', err.code.toLowerCase(), colors.r);
+    ms = 0;
+    switch (err.code) {
+      case 'ETIMEDOUT':
+        hinfo = cc('info', 'connection_timeout', colors.r);
         break;
-    case 'ENOTFOUND':
-        hinfo = " info=server_not_found";
+      case 'ENOTFOUND':
+        hinfo = cc('info', 'server_not_found', colors.r);
         break;
-    case 'ECONNREFUSED':
-        hinfo = " info=connection_refused";
+      case 'ECONNRESET':
+        hinfo = cc('info', 'connection_closed', colors.r);
+        break;
+      case 'ECONNREFUSED':
+        hinfo = cc('info', 'connection_refused', colors.r);
         break;
     }
   } else if (res && res.headers) {
-    if (res.statusCode >= 500) hstatus = down;
-    if (status_codes[res.statusCode]) hinfo = " info=" + status_codes[res.statusCode].replace(/\s+/g, '_');
-    hcode = ' code=' + res.statusCode;
-    if (res.headers['content-length'] && res.headers['content-length'] > 0) hlength = ' content-length=' + res.headers['content-length'];
-    if (res.headers['server']) hserver = ' server=' + res.headers['server'];
+    htime = cc('time', ms, colors.u, 'ms');
+    code = res.statusCode;
+    status_color = statusColor(code);
+    if (code >= 500) status = down;
+    hcode = cc('code', code, (status_color !== colors.g) ? status_color : '');
+    if (status_codes[code]) hinfo = cc('info', status_codes[code].replace(/\s+/g, '_'), (status_color !== colors.g) ? status_color : '');
+    if (res.headers['content-length'] && res.headers['content-length'] > 0) hlength = 'content-length=' + res.headers['content-length'];
+    if (res.headers.server) hserver = 'server=' + res.headers.server;
   } else {
-    hstatus = 'unknown_error';
+    status = hstatus = 'unknown_error';
   }
-  console.log(hping + hip + hserver + hlength + hcode + hinfo + ' status=' + hstatus);
+
+  hurl = hurl.replace(url_p.hostname, colr('bold', colr(status_color, url_p.hostname))).replace(url_p.port, colr('bold', colr(status_color, url_p.port)));
+  if (url_p.path && url_p.path != '/' && code !== 'error') hurl = hurl.replace(url_p.path, colr(status_color, url_p.path));
+  hstatus = colr('bold', colr(status_color, status));
+  hip = colr(colors.bb, hip);
+
+  line = [
+    'hPING:', (sdo.status) ? hstatus : empty, (sdo.url) ? hurl : empty, (sdo.ip) ? hip : empty, (sdo.type) ? htype : empty, (sdo.status_code) ? hcode : empty, (sdo.status_info) ? hinfo : empty, (sdo.server) ? hserver : empty, (sdo.content_length) ? hlength : empty, (sdo.response_time) ? htime : empty
+  ];
+
+  if (stats[url_org].length >= ints(settings.stats_for_last)) stats[url_org].shift();
+  if (settings.log_status_change) {
+    if (stats[url_org][stats[url_org].length - 1] === undefined || (stats[url_org][stats[url_org].length - 1] !== undefined && stats[url_org][stats[url_org].length - 1].status !== status)) {
+      log(line);
+    }
+  }
+  stats[url_org].push({
+    status: status,
+    code: code,
+    time: ms
+  });
+
+  return line;
 }
 
+function showServers() {
+  console.log(info, (settings.servers) ? '\nServer groups (set in config):' + pp(settings.servers) : '', 'usage: hping ' + usage);
+}
+
+function showSettings(cnf) {
+  console.log('Settings from config file: %s %s', cnf, pp(settings));
+}
+
+function display(line) {
+  console.log(pline(line));
+}
+
+function log(line) {
+  if (settings.log_status_change) logger_file.info(pline(line));
+}
+
+function gracefulExit() {
+  if (ints(settings.show_stats_for_last) > 0) {
+    for (var url in stats) {
+      if (url) {
+        display(displayStat(url));
+        if (settings.log_stats_on_exit) log(displayStat(url));
+      }
+    }
+  }
+  log4js.shutdown(function() {
+    process.exit(1);
+  });
+}
+
+function statusColor(code) {
+  var status_color = colors.g;
+
+  if (code >= 500 || code == 'error') {
+    status_color = colors.r;
+  } else if (code >= 400) {
+    status_color = colors.y;
+  }
+  return status_color;
+}
+
+function displayStat(url) {
+  if (stats[url].length === 0) return;
+
+  var codes = [],
+      out = [],
+      total = {
+        requests: stats[url].length,
+        codes: {},
+        time: [],
+        up: 0,
+        down: 0
+      },
+      timesrange,
+      requests = '[' + ((total.requests > settings.show_stats_for_last) ? 'last ' : '') + total.requests + ' requests] ',
+      stat_line = '\n--- ' + url + ' hPING statistics ' + requests + '---\n';
+
+  stats[url].forEach(function(stat) {
+
+    if (!total.codes[stat.code]) total.codes[stat.code] = 1;
+    else total.codes[stat.code]++;
+
+    if (stat.status == '[UP]') total.up++;
+    else total.down++;
+
+    if (stat.time > 0) total.time.push(stat.time);
+  });
+
+  for (var code in total.codes) {
+    if (code) codes.push(statProcess(code, total.codes[code], total.requests, statusColor(code), ''));
+  }
+
+  timesrange = total.time.range();
+
+  out = [
+    stat_line,
+    statProcess('UP', total.up, total.requests, colors.g, 'bold'),
+    statProcess('DOWN', total.down, total.requests, colors.r, 'bold'),
+    codes.join(' '), (timesrange.min) ? 'time(min=' + timesrange.min + ' avg=' + timesrange.avg + ' max=' + timesrange.max + ')ms' : ''
+  ];
+
+  function statProcess(lb, tv, tr, tc, tb) {
+    if (lb === 'error') lb += 's';
+    var st = lb + '=' + Math.floor10((tv / tr) * 100) + '%';
+    return (tv > 0) ? colr(tb, colr(tc, st)) : '';
+  }
+
+  return out;
+}
+
+process.on('SIGTERM', function() {
+  gracefulExit();
+}).on('SIGINT', function() {
+  gracefulExit();
+});
+
+function cc(s1, s2, c, s3) {
+  if (!s3) s3 = '';
+  return (c && settings.use_colors) ? s1 + '=' + (color[c](s2)) + s3 : s1 + '=' + s2 + s3;
+}
+
+function colr(c, s) {
+  return (!settings.use_colors || !c) ? s : color[c](s);
+}
+
+function ints(s) {
+  return parseInt(s, 10);
+}
+
+function pp(s) {
+  return JSON.stringify(s, null, ' ').replace(/[{}]|\,|[\[\]]|/g, '').replace(/\n\s*\n\s*\n/g, '\n');
+}
+
+function pline(l) {
+  if (util.isArray(l)) {
+    l = l.filter(function(e) {
+      return e;
+    });
+    return l.join(' ').replace(/\n\s/g, '\n');
+  }
+  return '';
+}

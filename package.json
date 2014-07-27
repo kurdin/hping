@@ -1,7 +1,7 @@
 {
   "name": "hping",
   "version": "0.0.1",
-  "description": "HTTP ping CLI with Node.js that sends HEAD or GET or POST requests to web or api servers and check if they alive",
+  "description": "HTTP ping CLI with Node.js that sends HEAD or GET or POST requests to web or api servers and checks if they alive",
   "main": "bin/hping",
   "repository": {
     "type": "git",
@@ -29,6 +29,8 @@
   "dependencies": {
     "commander": "~2.3.0",
     "request": "~2.37.0",
-    "yaml-config": "~0.3.0"
+    "yaml-config": "~0.3.0",
+    "cli-color": "~0.3.2",
+    "log4js": "~0.6.16"
   }
 }
