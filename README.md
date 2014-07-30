@@ -142,3 +142,7 @@ You can setup hPING to log status change to separate log file. Default log file 
 To enable log output, you need to edit ``~/.hping/hping.conf.yaml`` config file and set: ``log_status_change`` : ``true``
 
 Also, you can make hPING to output statistics to log file with option ``log_stats_on_exit`` : ``true``
+
+##License
+The MIT License (MIT)
+Copyright (c) 2013 Sergey Kurdin
