@@ -25,11 +25,6 @@ $ npm link
 
 ## Usage
 
-Quick help:
-```bash
-$ hping # 
-usage: hping [head|get|post] [http(s)://]www.webserver.com[:port] [another host] [server group]
-```
 hPING single server ``www.google.com``:
 ```bash
 $ hping www.google.com 
@@ -38,7 +33,7 @@ hPING single server with ``GET`` method:
 ```bash
 $ hping get www.google.com
 ```
-hPING multiple servers (www.google.com and www.apple.com and www.microsoft.com):
+hPING multiple servers ``www.google.com`` and ``www.apple.com`` and ``www.microsoft.com``):
 ```bash
 $ hping www.google.com www.apple.com www.microsoft.com
 ```
@@ -46,30 +41,17 @@ hPING group of servers from config file (default config in: ``~/.hping/hping.con
 ```bash
 $ hping "apple production"
 ```
-Show hPING server groups from config:
-```bash
-$ hping servers
-
- "microsoft live": 
-  "http://www.live.com"
-  "http://www.live.fr"
-  "http://www.live.de"
-  "http://www.live.ru"
-  "http://www.live.com/api"
- 
- "apple production": 
-  "http://www.apple.com"
-  "http://www.icloud.com"
-  "https://itunes.apple.com"
- 
- "eurohosting": 
-  "http://www.leaseweb.eu"
-  "http://www.hetzner.de"
-  "http://www.1and1.co.uk"
-```
 hPING can mix group of servers and separate hosts with single command:
 ```bash
 $ hping "apple production" www.github.com
+```
+## Settings
+
+## Help
+hPING quick usage help:
+```bash
+$ hping 
+usage: hping [head|get|post] [http(s)://]www.webserver.com[:port] [another host] [server group]
 ```
 hPING full help:
 ```bash
@@ -101,8 +83,52 @@ $ hping -h
     -c, --config [~/.hping/hping.conf.yaml]  hping config file in YAML format
     -i, --interval [1] 
 ```
+Show hPING server groups from config file, default ``~/.hping/hping.conf.yaml``:
+```bash
+$ hping servers
 
+ "microsoft live": 
+  "http://www.live.com"
+  "http://www.live.fr"
+  "http://www.live.de"
+  "http://www.live.ru"
+  "http://www.live.com/api"
+ 
+ "apple production": 
+  "http://www.apple.com"
+  "http://www.icloud.com"
+  "https://itunes.apple.com"
+ 
+ "eurohosting": 
+  "http://www.leaseweb.eu"
+  "http://www.hetzner.de"
+  "http://www.1and1.co.uk"
+```
+hPING default settings:
+```bash
+interval: 1 # (seconds) interval between hPING requests
+type: HEAD # (type or requests): HEAD, GET, POST, PUT
+timeout: 5000 # (milliseconds) request connection timeout
+use_colors: true # (true || false), use colors for hPING output
+show_stats_for_last: 100 # (number of requests) show hPING statistics for last X number of requests, set 0 to disable
+max_run_time: 600 # (seconds) hPING maximum running time, set 0 to disable
 
+log_status_change: false # (true || false) if true, hPING will log status changes to log file
+log_file: logs/hping.log # (path) to hPING log file, default path in users home .hping folder
+log_stats_on_exit: true # (true || false) if true, hPING will log statistics to file on exit
 
-
-
+display_in_output: # use true || fasle to turn on/off log output sections
+  status: true 
+  url: true
+  ip: true
+  type: false
+  status_code: true
+  status_info: true
+  server: true
+  content_length: false
+  response_time: true
+```
+Display hPING all current settings:
+```bash
+$ hping settings
+```
