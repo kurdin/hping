@@ -4,6 +4,7 @@
 
 var program = require('commander'),
   util = require('util'),
+  pkg = require('../package.json'),
   fs = require('fs'),
   log4js = require('log4js'),
   dns = require('dns'),
@@ -35,7 +36,7 @@ var settings, stats = {},
   logger_file;
 
 program
-  .version('0.0.4')
+  .version(pkg.version)
   .usage(usage)
   .option('-c, --config [' + confile + ']', 'hping config file in YAML format', defaults.confile)
   .option('-i, --interval [1]', 'hping interval in seconds (set default in ' + confile + ')', defaults.interval);
@@ -274,6 +275,8 @@ function log(line) {
 }
 
 function gracefulExit() {
+  var updateNotifier = require('update-notifier');
+
   if (ints(settings.show_stats_for_last) > 0) {
     for (var url in stats) {
       if (url) {
@@ -283,6 +286,7 @@ function gracefulExit() {
     }
   }
   log4js.shutdown(function() {
+    updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
     process.exit(1);
   });
 }
