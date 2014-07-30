@@ -137,5 +137,8 @@ $ hping -h
     -i, --interval [1] 
 ```
 ## Log to file
-You can setup hPING to log status change to separate log file. Default log file located in ``~/.hping/log`` folder, you can change it with ``log_file`` option. To enable log output, you need to edit ``~/.hping/hping.conf.yaml`` config file and set: ``log_status_change``: ``true``. 
-Also, you can make hPING to output statistics to log file with option ``log_stats_on_exit`` : ``true``.
+You can setup hPING to log status change to separate log file. Default log file located in ``~/.hping/logs`` folder, you can change it with ``log_file`` option. 
+
+To enable log output, you need to edit ``~/.hping/hping.conf.yaml`` config file and set: ``log_status_change`` : ``true``
+
+Also, you can make hPING to output statistics to log file with option ``log_stats_on_exit`` : ``true``
