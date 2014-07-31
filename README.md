@@ -4,8 +4,8 @@ hPING (HTTP ping)
 Node.js CLI that sends HTTP HEAD or GET or POST requests to any web or api servers.
 
 <img src="http://www.anothervision.com/img/github/hping.gif" width="1126"/>
-
 hPING is the fastest and easiest way to check or quickly monitor for http servers availability.
+
 ## Installation
 The latest hPING version is installable via NPM:
 ```bash
