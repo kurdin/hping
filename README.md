@@ -1,17 +1,17 @@
 hPING (HTTP ping)
 =====
 
-Node.js CLI that sends HTTP HEAD or GET or POST requests to any web or api servers.
+Node.js CLI sends HTTP HEAD or GET or POST requests to any web or api servers.
 
 <img src="http://www.anothervision.com/img/github/hping.gif" width="1126"/>
-hPING is the fastest and easiest way to check or quickly monitor for http servers availability.
+hPING is the fastest and easiest way to check or quickly monitor http servers availability.
 
 ## Installation
 The latest hPING version is installable via NPM:
 ```bash
 $ npm install hping -g
 ```
-If the above fails try this:
+If the above fails, try this:
 ```bash
 $ npm install git://github.com/kurdin/hping#master -g
 ```
@@ -138,7 +138,7 @@ $ hping -h
     -i, --interval [1] 
 ```
 ## Log to file
-You can setup hPING to log status change to separate log file. Default log file located in ``~/.hping/logs`` folder, you can change it with ``log_file`` option. 
+You can setup hPING to log status change to separate log file. Default log file is located in ``~/.hping/logs`` folder, you can change it with ``log_file`` option. 
 
 To enable log output, you need to edit ``~/.hping/hping.conf.yaml`` config file and set: ``log_status_change`` : ``true``
 
