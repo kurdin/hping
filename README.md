@@ -146,4 +146,4 @@ Also, you can make hPING to output statistics to log file with option ``log_stat
 
 ##License
 The MIT License (MIT)
-Copyright (c) 2013 Sergey Kurdin
+Copyright (c) 2014 Sergey Kurdin
