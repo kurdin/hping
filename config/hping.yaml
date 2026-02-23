@@ -1,17 +1,18 @@
 default:
 
   interval: 1 # (seconds) interval between hPING requests
-  type: HEAD # (type or requests): HEAD, GET, POST, PUT
+  type: HEAD # (request type): HEAD, GET, POST
   timeout: 5000 # (milliseconds) request connection timeout
   use_colors: true # (true || false), use colors for hPING output
   show_stats_for_last: 100 # (number of requests) show hPING statistics for last X number of requests, set 0 to disable
+  stats_for_last: 100 # (number of requests) keep stats for last X requests per target
   max_run_time: 600 # (seconds) hPING maximum running time, set 0 to disable
 
   log_status_change: false # (true || false) if true, hPING will log status changes to log file
   log_file: logs/hping.log # (path) to hPING log file, default path in users home .hping folder
   log_stats_on_exit: true # (true || false) if true, hPING will log statistics to file on exit
 
-  display_in_output: # use true || fasle to turn on/off log output sections
+  display_in_output: # use true || false to turn on/off log output sections
     status: true 
     url: true
     ip: true
