@@ -274,6 +274,24 @@ test('no args prints help output', async () => {
   assert.match(result.stdout, /Examples:/);
 });
 
+test('-V prints version and exits', async () => {
+  const result = await runCli(['-V'], {});
+  assert.equal(result.code, 0, result.stderr);
+  assert.match(result.stdout, /^\d+\.\d+\.\d+\n$/);
+});
+
+test('-v prints version and exits', async () => {
+  const result = await runCli(['-v'], {});
+  assert.equal(result.code, 0, result.stderr);
+  assert.match(result.stdout, /^\d+\.\d+\.\d+\n$/);
+});
+
+test('--version prints version and exits', async () => {
+  const result = await runCli(['--version'], {});
+  assert.equal(result.code, 0, result.stderr);
+  assert.match(result.stdout, /^\d+\.\d+\.\d+\n$/);
+});
+
 test('missing custom config falls back to user config', async () => {
   const { home } = await makeTempHome();
   const missingConfig = path.resolve(home, 'missing-config.yaml');
